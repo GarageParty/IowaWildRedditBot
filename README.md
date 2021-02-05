@@ -22,6 +22,11 @@ python3 -m venv venv
 ./venv/bin/Scripts/activate
 pip install -r requirements.txt
 ```
+### Pre-Commit Hook
+
+If you can run `make` the the `make init` will setup the pre-commit hook for you. Otherwise run:
+
+`git config core.hooksPath .githooks`
 
 ### Run tests
 
