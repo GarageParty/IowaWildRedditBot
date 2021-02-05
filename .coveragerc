@@ -1,0 +1,12 @@
+[tool:pytest]
+addopts = --cov=.
+
+[coverage:report]
+fail_under = 100
+show_missing = True
+
+[coverage:run]
+branch = True
+omit = 
+    tests/*
+    venv/*
