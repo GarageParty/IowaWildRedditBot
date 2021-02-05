@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "**** Running pre-commit hook ****"
+
+echo "**** Running tox ****"
+
+tox
+
+
+if [ $? -eq 0 ]
+then
+	echo "**** SUCCESS **** Tox pre-commit hook passed. Congratulations!"
+	exit 0
+else
+	echo "**** FAILURE **** Tox pre-commit hook failed. See above for error output. (sad violin)"
+	exit 1
+fi
