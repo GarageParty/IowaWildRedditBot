@@ -12,6 +12,7 @@ def main():
     )
 
     print(reddit.read_only)
+    return reddit.read_only
 
 
 if __name__ == "__main__":
